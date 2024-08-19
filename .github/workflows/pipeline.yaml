@@ -1,7 +1,9 @@
 name: CI
-on: [push, workflow_dispatch]
-branches: [ main ]
-
+on: 
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    
 jobs:
   scan:
     name: gitleaks
